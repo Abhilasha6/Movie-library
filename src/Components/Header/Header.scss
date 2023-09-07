@@ -1,0 +1,87 @@
+$bg: rgb(16, 16, 16);
+:root {
+  background-color: $bg;
+  color: white;
+}
+.search-container {
+  color: white;
+  margin-right: 0%;
+  margin-bottom: 15px;
+}
+button {
+  background-color: $bg;
+  color: white;
+}
+input {
+  background-color: rgb(16, 16, 16);
+  text-decoration: solid;
+  border-style: initial;
+  box-shadow: none;
+  margin-left: 80%;
+  color: white;
+}
+// .search-results{
+//         width: 200px;
+//         margin: 0.3rem;
+//         display: flex;
+//         color: white;
+//         flex-direction: column;
+//         box-sizing: border-box;
+//         cursor: pointer;
+//         transition: transform 0.5s;
+//         &:hover {
+//           transform: translateY(-10px);
+//         }
+//         background-color: $bg;
+//         padding: 1rem;
+// }
+nav {
+  margin: auto 0;
+  justify-content: space-evenly;
+}
+/* Header.scss */
+.header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  justify-content: space-evenly;
+  .logo {
+    height: 75px;
+  }
+  .search-results {
+    // h2 {
+    // }
+
+    .top5 {
+      /* styles for all the 5 results*/
+      display: flex;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      justify-content: flex-start;
+
+      div {
+        /* Styles for each search result item */
+        flex: 0 0 auto; /* Don't allow items to grow or shrink */
+        margin-right: 10px;
+        text-align: center; /* Center the content horizontally */
+        width: 150px; /* Adjust the width as needed */
+
+        img {
+          /* Styles for the movie poster */
+          max-width: 100%;
+          height: auto;
+        }
+
+        p {
+          /* Styles for the movie title */
+          margin-top: 5px;
+          white-space: nowrap; /* Prevent text from wrapping */
+          overflow: hidden; /* Hide overflowing text */
+          text-overflow: ellipsis; /* Display ellipsis (...) for long titles */
+        }
+      }
+    }
+  }
+}
